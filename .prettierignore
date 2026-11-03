@@ -1,0 +1,12 @@
+node_modules
+dist
+.next
+coverage
+pnpm-lock.yaml
+sport-erp-kit
+docs
+PROMPTS.md
+DECISIONS.md
+CLAUDE.md
+*.pdf
+.claude

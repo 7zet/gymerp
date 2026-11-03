@@ -1,0 +1,28 @@
+{
+  "model": "sonnet",
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(pnpm *)",
+      "Bash(docker compose *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ],
+    "ask": [
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./pnpm-lock.yaml)",
+      "Read(**/node_modules/**)",
+      "Read(**/dist/**)",
+      "Read(**/.next/**)",
+      "Read(**/coverage/**)",
+      "Read(**/drizzle/meta/**)"
+    ]
+  }
+}
